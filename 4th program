@@ -1,0 +1,7 @@
+def area_hexogon(s):
+    """function which gives area of hexagon"""
+    a=(3*1.732*s*s)/2
+    return a
+
+
+print(area_hexogon(2))
