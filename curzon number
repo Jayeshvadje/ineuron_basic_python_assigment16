@@ -1,0 +1,30 @@
+# In this challenge, establish if a given integer num is a Curzon number. If 1 plus
+# 2 elevated to num is exactly divisible by 1 plus 2 multiplied by num, then num is a Curzon
+# number.
+# Given a non-negative integer num, implement a function that returns True if num is a Curzon
+# number, or False otherwise.
+# Examples
+# is_curzon(5) ➞ True
+# 2 ** 5 + 1 = 33
+# 2 * 5 + 1 = 11
+# 33 is a multiple of 11
+
+def curzon(z):
+    """function which gives curzon number"""
+    try:
+        a=2**z+1
+        b=2*z+1
+        if a%b==0:
+            print(True)
+            print(f"2 ** {z} +1 = {a}")
+            print(f"2 * {z} + 1 = {b}")
+            print(f"{a} is a multiple of {b}")
+        else:
+            print(False)
+            print(f"2 ** {z} +1 = {a}")
+            print(f"2 * {z} + 1 = {b}")
+            print(f"{a} is not multiple of {b}")
+    except Exception as e:
+        print(e)
+
+curzon(5)
